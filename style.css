@@ -1,0 +1,285 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Montserrat:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+:root{
+    --color: #9176FF;
+    --dark-color: #2b2b2b;
+    --dark-icon-color: #fff;
+    --light-color: #f7f7f7;
+    --light-icon-color: #FFDE59;
+
+}
+
+header{
+    height: 58px;
+    background-color: #212529;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+    display: flex;
+    
+}
+
+
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 20px;
+    margin-right: 1rem;
+    padding: 0 20px;
+}
+
+#logo img{
+    width: 78px;
+    padding: 0 0 4px;
+}
+
+nav ul{
+    height: 58px;
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+    position: absolute;
+    right: 0;
+}
+
+nav ul li{
+    list-style-type: none;
+    padding: 0 23px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    font-weight: bold;
+}
+
+center{
+    display: block;
+    text-align: -webkit-center;
+}
+
+footer{
+    display: block;
+    background-color: #212529;
+    margin-top: 60px;
+    background-size: 100% 100%;
+    background-size: cover;
+    box-shadow: 0px 0px 10px grey;
+    display: inline-block;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.circle img{
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+    padding: 2px;
+    margin: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #f95c39;
+    box-shadow: 0px 0px 6px black;
+}
+
+.tags{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.row-row{
+    display: flex;
+    justify-content:left;
+    align-items:flex-start;
+    gap: 3rem;
+    color: #ffffffcc;
+    font-size: 20px;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    margin-left:11rem;
+    padding: 0px 15px;
+}
+
+.block-header{
+    margin: 8px 12px;
+    padding: 3px 4px;
+}
+
+
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #fafafa;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-post{
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    width: 31px;
+    height: 29px;
+    user-select: none;
+    border-radius: 0.25rem;
+    line-height: 1.5;
+    background-color: transparent;
+    border-color: dodgerblue;
+    color: dodgerblue;
+
+}
+
+.btn{
+    background-color: #fff;
+    width: 80px;
+    height: 40px;
+    border-radius: 30px;
+    line-height: 1.5;
+    padding: 0 4px;
+    box-shadow: inset 0 8px 60px rgba(0, 0, 0, .1),
+                inset 0 8px 8px rgba(0, 0, 0, .1),
+                inset 0 -4px 4px rgba(0, 0, 0, .1);
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+
+
+}
+
+.btn_indicator{
+     background-color: #fff;
+     height: 35px;
+     width: 35px;
+     border-radius: 50%;
+     position: absolute;
+     box-shadow: 0 8px 40px rgba(0, 0, 0, .2);
+
+     transition: transform 0.3s ease;
+     
+}
+
+.btn_icon-container{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+#btn_icon{
+    color: var(--light-icon-color);
+    font-size: 29px;
+    
+
+}
+.block-header{
+    display: flex;
+    gap: 3rem;
+}
+
+.profile img{
+    border-radius: 50%;
+}
+.tagitems{
+    gap: 1rem;
+}
+
+.row1{
+    display: flex;
+    margin: 6px 22px;
+    padding: 3px 5px;
+    
+}
+.row1 a{
+    text-decoration: none;
+}
+
+.card{
+    
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.light{
+    background-color: white;
+    color: black;
+}
+
+.dark a{
+    color: white;
+}
+.dark .btn_indicator{
+    transform: translateX(37px);
+    background-color: var(--dark-color);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, .3);
+}
+
+.dark #btn_icon{
+    color: var(--dark-icon-color);
+}
+.dark .btn{
+    box-shadow: inset 0 8px 60px rgba(0, 0, 0, .3),
+                inset 0 8px 8px rgba(0, 0, 0, .3),
+                inset 0 -4px 4px rgba(0, 0, 0, .3);
+}
+#btn_icon .animated{
+    animation: spin 3s ease-in infinite alternate-reverse;
+}
+@keyframes spin{
+    from{
+        transform: rotate(0 deg);
+    }
+    to{
+        transform: rotate(360 deg);
+    }
+}
+
+.count-tag{
+    display: inline-flex;
+    margin: 39px;
+    gap: 48px;
+}
+.like-count{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+}
+.like:hover {
+    cursor: default;
+}
+
+.heart:hover{
+    cursor: pointer;
+    color: #fc0362;
+}
